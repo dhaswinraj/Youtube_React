@@ -1,0 +1,26 @@
+.shorts-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.shorts-container::-webkit-scrollbar {
+  display: none;
+}
+
+.short-card {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.short-card iframe {
+  width: 350px;
+  height: 620px;
+  border-radius: 20px;
+  border: none;
+}
