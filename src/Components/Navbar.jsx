@@ -13,8 +13,13 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineFeedback } from "react-icons/md";
 import { Link } from "react-router-dom";
 import './Navbar.css'
+import { Navigate } from 'react-router-dom';
 
 export default function Navbar() {
+  const navigate = Navigate;
+  function go(){
+    Navigate('/settings');
+  }
   return (
     <>
     <div className="sidebar">
@@ -27,7 +32,7 @@ export default function Navbar() {
     <a href="#Watch-Later"><MdOutlineWatchLater />Watch Later</a>
     <a href="#Liked-Videos"><BiLike />Liked Videos</a>
     <a href="#Downloads"><LuArrowDownToLine/>Downloads</a>
-    <a href="#Settings"><IoSettingsOutline />Settings</a>
+      <a  onClick={go}><IoSettingsOutline />Settings</a>
     <a href="#Feedback"><MdOutlineFeedback />Send Feedback</a>
   </div>
   </>

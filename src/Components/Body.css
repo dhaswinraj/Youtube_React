@@ -40,34 +40,30 @@ h3{
   color: #ffffff;
 }
 
-.search-input {
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex: 1;
-  margin-left: 32px;
-  margin: 0 0 0 40px ;
-  height: 40px;
-  margin-top: 50px;
-  background-color: #fff;
-  border: 1px solid black;
-  border-color: #c6c6c6;
-  box-shadow: inset 1px 2px #eee;;
-  font-size: 15px;
-  border-radius: 40px 0 0 40px;
-  padding: 0 4px 0 16px;
+.search-container {
+  width: 600px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 16px;
+  background: #fff;
 }
 
 .search-button {
-  background-color: #f8f8f8;
-  border: 1px solid #d3d3d3;
-  width: 64px;
-  border-radius: 0 40px 40px 0;
-  color: rgb(0, 0, 0);
-  padding: 0;
+  position: relative;
+  top: 02px;
+  width: 65px;
+  height: 37px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 0 20px 20px 0;
   cursor: pointer;
-  margin: 0;
-  transition: background 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-button:hover {
@@ -75,13 +71,18 @@ h3{
 }
 
 .voice-icon {
-  color: rgb(0, 0, 0);
-  background-color: #eae3e3;
-  font-size: 24px;
+  background-color: #f2f2f2;
   border-radius: 50%;
-  padding: 5px;
-  margin-right: 0px;
-  transition: color 0.2s;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #000;
+  margin-right: 50px;
 }
 
 .voice-icon:hover {
@@ -91,29 +92,26 @@ h3{
 .right-section {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .create-btn {
-  background-color: #eae3e3;
+  background-color: #f2f2f2;
   color: rgb(0, 0, 0);
-  border: none;
-  padding: 8px 15px;
-  border-radius: 25px;
+  border: 1px solid #d3d3d3;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
   display: flex;
-  align-items: 50px;
-  gap: 5px;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
 
 .create-btn:hover {
-  background-color: #ffffff;
-}
-
-.bell-icon {
-  font-size: 22px;
-  cursor: pointer;
+  background-color: #e6e6e6;
 }
 
 .signin-btn {

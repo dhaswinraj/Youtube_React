@@ -20,8 +20,8 @@ form input {
 }
 
 form input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+  border-color: #ff0000;
+  box-shadow: 0 0 6px rgb(255, 0, 0);
 }
 
 form button {
@@ -29,7 +29,7 @@ form button {
   font-size: 17px;
   border: none;
   border-radius: 8px;
-  background: #3b82f6;
+  background: #ff0000;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -37,7 +37,7 @@ form button {
 }
 
 form button:hover {
-  background: #1d4ed8;
+  background: #ff0505;
 }
 
 @media (max-width: 400px) {

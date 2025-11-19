@@ -35,7 +35,7 @@ export default function Body() {
         <div  onSubmit={handleSearch}>
           <input
             type="text"
-            className="search-input"
+            className="search-container"
             placeholder="Search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
